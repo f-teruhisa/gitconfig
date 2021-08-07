@@ -1,24 +1,24 @@
 [user]
-	name = f-teruhisa
-	email = teru_fukumoto@outlook.jp
+  name = f-teruhisa
+  email = teru_fukumoto@outlook.jp
 
 [core]
-	ignorecase = false
-	precomposeunicode = true
-	editor = vim
+  ignorecase = false
+  precomposeunicode = true
+  editor = vim
   quotepath = false
   autocrlf = input
 
 [merge]
-	conflictstyle = diff3
-	tool = vimdiff
-	toolprompt = false
+  conflictstyle = diff3
+  tool = vimdiff
+  toolprompt = false
 
 [push]
   default = tracking
 
 [init]
-	defaultBranch = main
+  defaultBranch = main
 
 [color]
   ui = auto
