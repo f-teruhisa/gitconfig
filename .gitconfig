@@ -1,3 +1,39 @@
+[user]
+	name = f-teruhisa
+	email = teru_fukumoto@outlook.jp
+
+[core]
+	ignorecase = false
+	precomposeunicode = true
+	editor = vim
+  quotepath = false
+  autocrlf = input
+
+[merge]
+	conflictstyle = diff3
+	tool = vimdiff
+	toolprompt = false
+
+[push]
+  default = tracking
+
+[init]
+	defaultBranch = main
+
+[color]
+  ui = auto
+  quotepath  = false
+  autocrlf   = false
+  ignorecase = false
+  status = auto
+  diff = auto
+  branch = auto
+  interactive = auto
+  grep = auto
+
+[status]
+  showuntrackedfiles = no
+
 [alias]
   a = add
   b = branch
@@ -9,7 +45,7 @@
   m = merge
   p = pull
   r = rebase
-  s = stash
+  s = status
   t = tag
   w = show
   aa = commit --amend -a --no-edit
@@ -27,7 +63,7 @@
   ri = rebase -i
   rs = reset --soft
   sl = stash list
-  st = status
+  st = stash
   su = submodule update
   pop = stash pop
   plo = pull origin
@@ -37,8 +73,11 @@
   cob = checkout -b
   wip = commit -a -m \"[ci skip] WIP WIP WIP WIP WIP\"
   amend = commit --amend --no-edit
+  plom = pull origin master
   plod = pull origin develop
   plos = pull origin staging
   psos = push origin staging
   psfo = push -f origin
   shallow = clone --depth 1
+  graph = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
+
